@@ -7,6 +7,7 @@ import { Layout } from 'antd'
 import HeaderSection from './Home/components/Header'
 import SideBar from './Home/components/Sider'
 import FooterSection from './Home/components/Footer'
+import GigPost from './Home/components/GigPost'
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -20,7 +21,8 @@ export default function Home() {
           <Layout>
             <Header><HeaderSection /></Header>
             <Content>
-              <HomePage />
+              {/* <HomePage /> */}
+              <GigPost />
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
