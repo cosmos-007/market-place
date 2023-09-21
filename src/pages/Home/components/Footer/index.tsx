@@ -227,6 +227,8 @@ const FooterSection = () => {
 
                         </Col>
                     </Row>
+
+
                 </div>
             </div>
         </>
