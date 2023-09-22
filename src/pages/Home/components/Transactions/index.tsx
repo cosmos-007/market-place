@@ -56,30 +56,32 @@ const Transactions = () => {
       <div className={style.transactionsHistoryContainer}>
         <h1 className={style.title}>Transactions History</h1>
         <p className={style.descStyle}>Current Transfers</p>
-        {transactionHistoryData?.map((item, index) => {
-          return (
-            <div className={style.historyStyle} key={index}>
-              <h1 className={style.commonItemStyle}>{item?.amount || "--"}</h1>
-              <div className='d-flex'>
-                <CheckCircleOutlined
-                  style={{ color: item?.status == "Complete" ? "#069425" : "#FF0000" }}
-                />
-                <h1 className={style.commonItemStyle}>{item?.status || "--"}</h1>
+        <div className={style.historyTable}>
+          {transactionHistoryData?.map((item, index) => {
+            return (
+              <div className={style.historyStyle} key={index}>
+                <h1 className={style.commonItemStyle}>{item?.amount || "--"}</h1>
+                <div className='d-flex'>
+                  <CheckCircleOutlined
+                    style={{ color: item?.status == "Complete" ? "#069425" : "#FF0000" }}
+                  />
+                  <h1 className={style.commonItemStyle}>{item?.status || "--"}</h1>
+                </div>
+                <h1 className={style.commonItemStyle}>{item?.time || "--"}</h1>
+                <h1 className={style.commonItemStyle}>{item?.email || "--"}</h1>
+                <div className='d-flex align-items-center justify-content-start' style={{ minWidth: '150px' }}>
+                  <Image
+                    src={avatar}
+                    alt="avatar"
+                    className='img-fluid'
+                  />
+                  <h1 className={style.commonItemStyle}>{item?.name || "---"}</h1>
+                </div>
               </div>
-              <h1 className={style.commonItemStyle}>{item?.time || "--"}</h1>
-              <h1 className={style.commonItemStyle}>{item?.email || "--"}</h1>
-              <div className='d-flex align-items-center'>
-                <Image
-                  src={avatar}
-                  alt="avatar"
-                  className='img-fluid'
-                />
-                <h1 className={style.commonItemStyle}>{item?.name || "---"}</h1>
-              </div>
-            </div>
-          )
-        })
-        }
+            )
+          })
+          }
+        </div>
       </div>
     </div>
   )
