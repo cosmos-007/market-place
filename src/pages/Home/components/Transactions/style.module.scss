@@ -1,0 +1,50 @@
+.transactionsContainer {
+    .transactionsHistoryContainer {
+        margin-top: 50px;
+        padding: 40px;
+        border-radius: 18px;
+        background: #1B1B1D;
+
+        .title {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: #FFFFFF;
+            text-align: right;
+            margin-bottom: 16px;
+        }
+
+        .descStyle {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 159.687%;
+            text-align: right;
+            color: #D1D1F0;
+            margin-bottom: 50px;
+        }
+
+        .historyStyle {
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .commonItemStyle {
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 163.187%;
+                color: #FFFFFF;
+                margin: 0px;
+            }
+
+            :global(.anticon > svg) {
+                margin-right: 16px;
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+}
