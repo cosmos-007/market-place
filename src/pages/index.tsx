@@ -24,9 +24,9 @@ export default function Home() {
             <Header><HeaderSection /></Header>
             <Content>
               {/* <HomePage /> */}
-              {/* <GigPost /> */}
+              <GigPost />
               {/* <Budget /> */}
-              <Transactions />
+              {/* <Transactions /> */}
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
