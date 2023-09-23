@@ -74,7 +74,7 @@ const GigPost = () => {
         <>
             <div className={style.gigPostpage}>
                 
-                <Stepper activeStep={0}>
+                <Stepper activeStep={1} dir='rtl'>
                     <Step label="Publish Gig" />
                     <Step label="Upload Image" />
                     <Step label="Pricing" />

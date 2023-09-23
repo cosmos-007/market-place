@@ -1,0 +1,80 @@
+.ordersMainContainer {
+    margin-top: 80px;
+
+    .title {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 146.187%;
+        color: #FFFFFF;
+        text-align: right;
+        margin: 0px;
+    }
+
+    .dropDownContainer {
+        display: flex;
+        justify-content: end;
+        gap: 16px;
+
+        :global(.ant-select) {
+            :global(.ant-select-selector) {
+                padding: 24px 29px;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 169.688%;
+                color: #FFFFFF;
+                background-color: transparent;
+                border: 1px solid #2E3FDA33;
+                width: max-content;
+            }
+
+            :global(.ant-select-arrow) {
+                color: #FFFFFF;
+                top: 76%;
+            }
+        }
+
+        :global(.ant-input-affix-wrapper) {
+            background-color: transparent;
+            color: #FFFFFF;
+            max-width: 150px;
+            width: 100%;
+            border: 1px solid #2E3FDA33;
+            height: 50px;
+
+            :global(.ant-input) {
+                background-color: transparent;
+                color: #FFFFFF;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 152%;
+
+                &::placeholder {
+                    color: #FFFFFF;
+                }
+            }
+
+            :global(.anticon) {
+                svg {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    .orderTableContainer {
+        .orderTitle {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 131.687%;
+            text-align: right;
+            color: #FFFFFF;
+            margin-bottom: 50px;
+            margin-top: 36px;
+        }
+    }
+}
