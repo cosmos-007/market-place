@@ -11,6 +11,7 @@ import GigPost from './components/GigPost'
 import Budget from './components/Budget'
 import Transactions from './components/Transactions'
 import Orders from './components/Orders'
+import Community from './components/Community'
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -22,13 +23,16 @@ export default function Home() {
       <div className={style.home}>
         <Layout>
           <Layout>
-            <Header><HeaderSection /></Header>
+            <Header>
+              {/* <HeaderSection /> */}
+            </Header>
             <Content>
               {/* <HomePage /> */}
               {/* <GigPost /> */}
               {/* <Budget /> */}
               {/* <Transactions /> */}
-              <Orders />
+              {/* <Orders /> */}
+              <Community />
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
