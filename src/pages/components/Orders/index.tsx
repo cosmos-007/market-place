@@ -1,8 +1,8 @@
-import React from 'react'
-import style from './style.module.scss'
-import { Col, Input, Row, Select } from 'antd'
+import React from 'react';
+import style from './style.module.scss';
+import { Col, Input, Row, Select } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import Table from 'antd/es/table';
+import {Table} from 'antd';
 import { columns, data } from './dammyTableData';
 
 const Orders = () => {
