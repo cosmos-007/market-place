@@ -2,30 +2,30 @@ import React from 'react'
 import style from './style.module.scss'
 import { CheckCircleOutlined } from '@ant-design/icons'
 import Image from 'next/image'
-import avatar from '../../../../assets/images/avatar.png'
-import HightIcon from '../../../../assets/images/highIcon.png'
-import LowIcon from '../../../../assets/images/lowIcon.png'
-import MoneyIcon from '../../../../assets/images/money.png'
-import DallorIcon from '../../../../assets/images/dallorIcon.png'
-import PlusIcon from '../../../../assets/images/PlusCircle.png'
-import Avatar1 from '../../../../assets/images/avatar1.png'
-import Avatar2 from '../../../../assets/images/avatar2.png'
-import Avatar3 from '../../../../assets/images/avatar3.png'
-import Avatar4 from '../../../../assets/images/avatar4.png'
-import Avatar5 from '../../../../assets/images/avatar5.png'
-import Arrowleft from '../../../../assets/images/arrowLeft.png'
-import AddIcon from '../../../../assets/images/add.png'
-import CopyIcon from '../../../../assets/images/copyIcon.png'
-import ATM from '../../../../assets/images/atmCard.png'
-import ATM1 from '../../../../assets/images/atmCard1.png'
-import ATM2 from '../../../../assets/images/atmCard2.png'
-import ATM3 from '../../../../assets/images/atmCard3.png'
-import ATM4 from '../../../../assets/images/atmCard4.png'
-import ATM5 from '../../../../assets/images/atmCard5.png'
-import ATM6 from '../../../../assets/images/atmCard6.png'
-import ATM7 from '../../../../assets/images/atmCard7.png'
-import ATM8 from '../../../../assets/images/atmCard8.png'
-import ATM9 from '../../../../assets/images/atmCard9.png'
+import avatar from '../../../assets/images/avatar.png'
+import HightIcon from '../../../assets/images/highIcon.png'
+import LowIcon from '../../../assets/images/lowIcon.png'
+import MoneyIcon from '../../../assets/images/money.png'
+import DallorIcon from '../../../assets/images/dallorIcon.png'
+import PlusIcon from '../../../assets/images/PlusCircle.png'
+import Avatar1 from '../../../assets/images/avatar1.png'
+import Avatar2 from '../../../assets/images/avatar2.png'
+import Avatar3 from '../../../assets/images/avatar3.png'
+import Avatar4 from '../../../assets/images/avatar4.png'
+import Avatar5 from '../../../assets/images/avatar5.png'
+import Arrowleft from '../../../assets/images/arrowLeft.png'
+import AddIcon from '../../../assets/images/add.png'
+import CopyIcon from '../../../assets/images/copyIcon.png'
+import ATM from '../../../assets/images/atmCard.png'
+import ATM1 from '../../../assets/images/atmCard1.png'
+import ATM2 from '../../../assets/images/atmCard2.png'
+import ATM3 from '../../../assets/images/atmCard3.png'
+import ATM4 from '../../../assets/images/atmCard4.png'
+import ATM5 from '../../../assets/images/atmCard5.png'
+import ATM6 from '../../../assets/images/atmCard6.png'
+import ATM7 from '../../../assets/images/atmCard7.png'
+import ATM8 from '../../../assets/images/atmCard8.png'
+import ATM9 from '../../../assets/images/atmCard9.png'
 import {
   Button,
   Col,
@@ -35,53 +35,9 @@ import {
   Tabs,
   TabsProps
 } from 'antd'
+import { transactionHistoryData } from './dammayData'
 
 const Transactions = () => {
-
-  const transactionHistoryData = [
-    {
-      name: "Yulia Polishchuk",
-      email: "@mynamepolishchuk",
-      time: "02 Minutes Ago",
-      status: "Complete",
-      amount: "+$675.00"
-    },
-    {
-      name: "Yulia Polishchuk",
-      email: "@mynamepolishchuk",
-      time: "12 Minutes Ago",
-      status: "Cancel",
-      amount: "+$675.00"
-    },
-    {
-      name: "Yulia Polishchuk",
-      email: "@mynamepolishchuk",
-      time: "02 Minutes Ago",
-      status: "Complete",
-      amount: "+$675.00"
-    },
-    {
-      name: "Yulia Polishchuk",
-      email: "@mynamepolishchuk",
-      time: "12 Minutes Ago",
-      status: "Cancel",
-      amount: "+$675.00"
-    },
-    {
-      name: "Yulia Polishchuk",
-      email: "@mynamepolishchuk",
-      time: "02 Minutes Ago",
-      status: "Complete",
-      amount: "+$675.00"
-    },
-    {
-      name: "Yulia Polishchuk",
-      email: "@mynamepolishchuk",
-      time: "02 Minutes Ago",
-      status: "Complete",
-      amount: "+$675.00"
-    },
-  ]
 
   const onChange = (key: string) => {
     console.log(key);

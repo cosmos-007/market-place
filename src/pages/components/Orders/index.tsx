@@ -2,7 +2,8 @@ import React from 'react'
 import style from './style.module.scss'
 import { Col, Input, Row, Select } from 'antd'
 import { SearchOutlined } from '@ant-design/icons';
-import Table, { ColumnsType } from 'antd/es/table';
+import Table from 'antd/es/table';
+import { columns, data } from './dammyTableData';
 
 const Orders = () => {
 
@@ -10,51 +11,6 @@ const Orders = () => {
         console.log(`selected ${value}`);
     };
 
-    interface DataType {
-        key: string;
-        name: string;
-        age: number;
-        address: string;
-    }
-    const columns: ColumnsType<DataType> = [
-        {
-            title: 'Name',
-            dataIndex: 'name',
-            key: 'name',
-            render: (text) => <a>{text}</a>,
-        },
-        {
-            title: 'Age',
-            dataIndex: 'age',
-            key: 'age',
-        },
-        {
-            title: 'Address',
-            dataIndex: 'address',
-            key: 'address',
-        },
-    ];
-
-    const data: DataType[] = [
-        {
-            key: '1',
-            name: 'John Brown',
-            age: 32,
-            address: 'New York No. 1 Lake Park',
-        },
-        {
-            key: '2',
-            name: 'Jim Green',
-            age: 42,
-            address: 'London No. 1 Lake Park',
-        },
-        {
-            key: '3',
-            name: 'Joe Black',
-            age: 32,
-            address: 'Sydney No. 1 Lake Park',
-        },
-    ];
     return (
         <div className={style.ordersMainContainer}>
             <Row>

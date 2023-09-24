@@ -66,6 +66,8 @@
     }
 
     .orderTableContainer {
+        margin-bottom: 40px;
+
         .orderTitle {
             font-size: 24px;
             font-style: normal;
@@ -75,6 +77,62 @@
             color: #FFFFFF;
             margin-bottom: 50px;
             margin-top: 36px;
+        }
+
+        :global(.ant-table) {
+            table {
+                thead {
+                    tr {
+                        th {
+                            background-color: #2C2D32;
+                            color: #FFFFFF;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-align: center;
+                            width: 100px;
+                            padding: 20px;
+                            border-bottom: 0px solid;
+
+                            &::before {
+                                background-color: #2C2D32 !important;
+                            }
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+
+                        td {
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            color: #E3D7FC;
+                            border-bottom: 5px solid #0A0A0A;
+                            margin-bottom: 2px;
+                            text-align: center;
+                            padding: 20px;
+                            background-color: #1B1B1D;
+
+
+                        }
+                    }
+
+                    :global(.ant-table-row) {
+
+                        :global(.ant-table-cell-row-hover) {
+                            background-color: #1B1B1D;
+                        }
+                    }
+                }
+            }
+        }
+
+        :global(.ant-pagination) {
+            display: none;
         }
     }
 }
