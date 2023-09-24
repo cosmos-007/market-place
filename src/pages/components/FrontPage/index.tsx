@@ -1,13 +1,13 @@
 import React from 'react'
 import style from './style.module.scss'
 import { Row, Col, Button, Carousel, Rate, Pagination } from 'antd'
-import slideImage from '../../../../assets/images/sliderImage.png'
+import slideImage from '../../../assets/images/sliderImage.png'
 import Image from 'next/image'
 import { ArrowLeftOutlined } from '@ant-design/icons'
-import countryFlag from '../../../../assets/images/flag.png'
-import Profile from '../../../../assets/images/profileimg.png'
-import thumbnill from '../../../../assets/images/thumbnill.png'
-import Like from '../../../../assets/images/like.png'
+import countryFlag from '../../../assets/images/flag.png'
+import Profile from '../../../assets/images/profileimg.png'
+import thumbnill from '../../../assets/images/thumbnill.png'
+import Like from '../../../assets/images/like.png'
 
 
 const HomePage = () => {

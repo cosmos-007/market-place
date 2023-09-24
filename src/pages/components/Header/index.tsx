@@ -2,9 +2,10 @@ import React from 'react'
 import { Menu, Input } from 'antd'
 import style from './style.module.scss'
 import { BellOutlined, HeartOutlined } from '@ant-design/icons'
-import envelopeicon from '../../../../assets/images/Letter.png'
-import profile from '../../../../assets/images/profileimg.png'
+import envelopeicon from '../../../assets/images/Letter.png'
+import profile from '../../../assets/images/profileimg.png'
 import Image from 'next/image'
+
 const HeaderSection = () => {
 
     const menuitems = [

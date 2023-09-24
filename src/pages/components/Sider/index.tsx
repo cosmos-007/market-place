@@ -1,14 +1,14 @@
 import React from 'react'
 import style from './style.module.scss'
 import Image from 'next/image'
-import Logo from '../../../../assets/images/LOGO-HERE.png'
-import homeIcon from '../../../../assets/images/home.png'
-import categoryIcon from '../../../../assets/images/category.png'
-import profileIcon from '../../../../assets/images/profile.png'
-import checkoutIcon from '../../../../assets/images/checkout.png'
-import settingIcon from '../../../../assets/images/setting.png'
-import supportIcon from '../../../../assets/images/support.png'
-import personIcon from '../../../../assets/images/profileimg.png'
+import Logo from '../../../assets/images/LOGO-HERE.png'
+import homeIcon from '../../../assets/images/home.png'
+import categoryIcon from '../../../assets/images/category.png'
+import profileIcon from '../../../assets/images/profile.png'
+import checkoutIcon from '../../../assets/images/checkout.png'
+import settingIcon from '../../../assets/images/setting.png'
+import supportIcon from '../../../assets/images/support.png'
+import personIcon from '../../../assets/images/profileimg.png'
 import { Row, Col } from 'antd';
 
 const SideBar = () => {

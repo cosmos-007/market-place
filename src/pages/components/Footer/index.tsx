@@ -2,12 +2,12 @@ import React from 'react'
 import { Menu, Row, Col } from 'antd'
 import style from './style.module.scss'
 import Image from 'next/image'
-import seeIcon from '../../../../assets/images/see.png'
-import instagram from '../../../../assets/images/Instagram.png'
-import facebook from '../../../../assets/images/Facbook.png'
-import twitter from '../../../../assets/images/Twitter.png'
-import linkedin from '../../../../assets/images/Linkedin.png'
-import youtube from '../../../../assets/images/Youtube.png'
+import seeIcon from '../../../assets/images/see.png'
+import instagram from '../../../assets/images/Instagram.png'
+import facebook from '../../../assets/images/Facbook.png'
+import twitter from '../../../assets/images/Twitter.png'
+import linkedin from '../../../assets/images/Linkedin.png'
+import youtube from '../../../assets/images/Youtube.png'
 
 
 
