@@ -10,6 +10,7 @@ import uploadVideoIcon from '../../../../assets/images/videoUpload.png'
 import Profile from '../../../../assets/images/profileimg.png'
 import thumbnill from '../../../../assets/images/thumbnill.png'
 import Like from '../../../../assets/images/like.png'
+import { Step, Stepper } from 'react-form-stepper'
 
 const { TextArea } = Input;
 const getBase64 = (file: RcFile): Promise<string> =>
@@ -72,6 +73,15 @@ const GigPost = () => {
     return (
         <>
             <div className={style.gigPostpage}>
+                
+                <Stepper activeStep={1} dir='rtl'>
+                    <Step label="Publish Gig" />
+                    <Step label="Upload Image" />
+                    <Step label="Pricing" />
+                    <Step label="Description" />
+                    <Step label="Gig Title & Keyword" />
+                </Stepper>
+
                 {/* title and keyword  */}
                 <div className={style.formBlock}>
                     <h2 className={style.sectionTitle}>Gig Title & Keyword </h2>

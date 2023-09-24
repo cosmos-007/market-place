@@ -8,6 +8,9 @@ import HeaderSection from './Home/components/Header'
 import SideBar from './Home/components/Sider'
 import FooterSection from './Home/components/Footer'
 import GigPost from './Home/components/GigPost'
+import Budget from './Home/components/Budget'
+import Transactions from './Home/components/Transactions'
+import Orders from './Home/components/Orders'
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -22,7 +25,10 @@ export default function Home() {
             <Header><HeaderSection /></Header>
             <Content>
               {/* <HomePage /> */}
-              <GigPost />
+              {/* <GigPost /> */}
+              {/* <Budget /> */}
+              {/* <Transactions /> */}
+              <Orders />
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
