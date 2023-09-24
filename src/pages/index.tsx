@@ -24,7 +24,7 @@ export default function Home() {
         <Layout>
           <Layout>
             <Header>
-              {/* <HeaderSection /> */}
+              <HeaderSection />
             </Header>
             <Content>
               {/* <HomePage /> */}
