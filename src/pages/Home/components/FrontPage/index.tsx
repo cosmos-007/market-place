@@ -26,8 +26,8 @@ const HomePage = () => {
           </Col>
           <Col span={24} xl={16} lg={18} className={`mb-3 ${style.topcarousel}`}>
             <Carousel dots={true}>
-              {[1, 2, 3].map((item) => (
-                <div className={style.data}>
+              {[1, 2, 3].map((item,idx) => (
+                <div key={idx} className={style.data}>
                   <Row>
                     <Col span={24} md={8}>
                       <div className={style.slideimage}>
@@ -61,8 +61,8 @@ const HomePage = () => {
           </Col>
         </Row>
         <Row gutter={20} className='mt-3 mb-5'>
-          {[1, 2].map((item) => (
-            <Col span={24} xl={12} className='mb-3'>
+          {[1, 2].map((item,idx) => (
+            <Col key={idx} span={24} xl={12} className='mb-3'>
               <div className={`${style.freelanceCard} d-flex justify-content-between gap-3`}>
                 <div className={`${style.left} d-flex flex-column`}>
                   <h3 className={style.expertTitle}>
@@ -111,9 +111,9 @@ const HomePage = () => {
           <Col span={24} className='mb-4'>
             <h2 className={style.sectionTitle}>Browse Services As your Need</h2>
           </Col>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => (
-            <Col span={24} xl={6} lg={8} md={12} className='mb-3'>
-              <div className={`${style.serviceCard} d-flex flex-column`}>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item,idx) => (
+            <Col key={idx} span={24} xl={6} lg={8} md={12} className='mb-3'>
+              <div  className={`${style.serviceCard} d-flex flex-column`}>
                 <div className={style.thumbnilicon}>
                   <Image
                     src={thumbnill}
@@ -172,8 +172,8 @@ const HomePage = () => {
         <Row className='mt-5'>
           <Col span={24} className={`mb-3 ${style.topcarousel} `}>
             <Carousel dots={true}>
-              {[1, 2, 3].map((item) => (
-                <div className={`${style.data} ${style.second}`}>
+              {[1, 2, 3].map((item,idx) => (
+                <div  key={idx} className={`${style.data} ${style.second}`}>
                   <Row>
                     <Col span={24} md={8}>
                       <div className={`py-3 ${style.slideimage}`}>

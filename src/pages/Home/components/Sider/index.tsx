@@ -103,8 +103,8 @@ const SideBar = () => {
                     </Col>
                     <Col span={24} className='mb-2'>
                         <ul className={style.activeList}>
-                            {[1, 2, 3].map((item) => (
-                                <li className='mb-2'><h4 className={style.title}>Nadia Alie_09</h4>
+                            {[1, 2, 3].map((item,idx) => (
+                                <li key={idx} className='mb-2'><h4 className={style.title}>Nadia Alie_09</h4>
                                     <span>
                                         <Image
                                             src={personIcon}

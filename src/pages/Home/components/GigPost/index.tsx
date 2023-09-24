@@ -137,9 +137,9 @@ const GigPost = () => {
                                 <div className={style.suggested}>
                                     <h4>Suggested Categories</h4>
                                     <ul>
-                                        <li>Graphics & Design > Website UI UX Design</li>
-                                        <li>Graphics & Design > Landing Page Design</li>
-                                        <li>Graphics & Design >  Custome Website Design</li>
+                                        <li>{'Graphics & Design > Website UI UX Design'}</li>
+                                        <li>{'Graphics & Design > Landing Page Design'}</li>
+                                        <li>{'Graphics & Design >  Custome Website Design'}</li>
 
                                     </ul>
                                 </div>
