@@ -18,7 +18,7 @@ const Community = () => {
         </div>
       </div>
       <div>
-        <Image src={CommunityPic} alt='communityPic' />
+        <Image src={CommunityPic} alt='communityPic' className='img-fluid' />
       </div>
       <div className={style.communityMenu}>
         <Button className={style.emmptyBtn}></Button>
