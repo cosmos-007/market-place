@@ -12,6 +12,7 @@ import Budget from './components/Budget'
 import Transactions from './components/Transactions'
 import Orders from './components/Orders'
 import Community from './components/Community'
+import Gig from './components/Gig'
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -24,7 +25,7 @@ export default function Home() {
         <Layout>
           <Layout>
             <Header>
-              {/* <HeaderSection /> */}
+              <HeaderSection />
             </Header>
             <Content>
               {/* <HomePage /> */}
@@ -32,7 +33,8 @@ export default function Home() {
               {/* <Budget /> */}
               {/* <Transactions /> */}
               {/* <Orders /> */}
-              <Community />
+              {/* <Community /> */}
+              <Gig />
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
