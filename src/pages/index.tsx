@@ -12,6 +12,9 @@ import Budget from './components/Budget'
 import Transactions from './components/Transactions'
 import Orders from './components/Orders'
 import Community from './components/Community'
+import Gig from './components/Gig'
+import OverView from './components/OverView'
+import Checkout from './components/Checkout'
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -32,7 +35,10 @@ export default function Home() {
               {/* <Budget /> */}
               {/* <Transactions /> */}
               {/* <Orders /> */}
-              <Community />
+              {/* <Community /> */}
+              {/* <Gig /> */}
+              {/* <OverView /> */}
+              <Checkout />
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
