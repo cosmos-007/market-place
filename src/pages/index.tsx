@@ -15,6 +15,7 @@ import Community from './components/Community'
 import Gig from './components/Gig'
 import OverView from './components/OverView'
 import Checkout from './components/Checkout'
+import Chat from './components/Chat'
 
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -38,7 +39,8 @@ export default function Home() {
               {/* <Community /> */}
               {/* <Gig /> */}
               {/* <OverView /> */}
-              <Checkout />
+              {/* <Checkout /> */}
+              <Chat />
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
