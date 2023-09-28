@@ -130,7 +130,7 @@ const OverView = () => {
             </p>
             <h1 className={style.gigTitle}>Responsibilities:</h1>
             <p className={style.description}>
-              Compose original music tracks that align with the project's requirements.
+              Compose original music tracks that align with the project&apos;s requirements.
               Collaborate with the project team to understand their vision and incorporate their
             </p>
             <h1 className={style.gigTitle}>Deliverables:</h1>
@@ -158,9 +158,9 @@ const OverView = () => {
       </Row>
       <div className={style.extrasContainer}>
         <h1 className={style.title}>Extras</h1>
-        {[1, 2, 3]?.map(() => {
+        {[1, 2, 3]?.map((idx) => {
           return (
-            <div className='d-flex justify-content-between mt-5'>
+            <div key={idx} className='d-flex justify-content-between mt-5'>
               <div className='d-flex'>
                 <h1 className={style.extrasAmount}>$4</h1>
                 <h1 className={style.extrasDays}>2days</h1>
@@ -195,8 +195,8 @@ const OverView = () => {
               </div>
             </div>
             <p className={style.reviewDescription}>
-              Certainly! Guns N' Roses is a legendary rock band known for their energetic performances and iconic songs.
-              However, as an AI text-based model, I don't have the ability to listen to the music directly.
+              Certainly! Guns N&apos; Roses is a legendary rock band known for their energetic performances and iconic songs.
+              However, as an AI text-based model, I don&apos;t have the ability to listen to the music directly.
             </p>
           </div>
         </div>
@@ -221,8 +221,8 @@ const OverView = () => {
               </div>
             </div>
             <p className={style.reviewDescription}>
-              Certainly! Guns N' Roses is a legendary rock band known for their energetic performances and iconic songs.
-              However, as an AI text-based model, I don't have the ability to listen to the music directly.
+              Certainly! Guns N&apos; Roses is a legendary rock band known for their energetic performances and iconic songs.
+              However, as an AI text-based model, I don&apos;t have the ability to listen to the music directly.
             </p>
           </div>
         </div>
@@ -247,8 +247,8 @@ const OverView = () => {
               </div>
             </div>
             <p className={style.reviewDescription}>
-              Certainly! Guns N' Roses is a legendary rock band known for their energetic performances and iconic songs.
-              However, as an AI text-based model, I don't have the ability to listen to the music directly.
+              Certainly! Guns N&apos; Roses is a legendary rock band known for their energetic performances and iconic songs.
+              However, as an AI text-based model, I don&apos;t have the ability to listen to the music directly.
             </p>
           </div>
         </div>
@@ -261,7 +261,7 @@ const OverView = () => {
               We are seeking a skilled music composer to create original compositions for [Project Name].
               The project is a [brief description of the project, such as a short film,
               video game, advertisement, or podcast]. We require unique and captivating music
-              that enhances the overall experience and complements the project's theme and mood.</p>
+              that enhances the overall experience and complements the project&apos;s theme and mood.</p>
           }]}
         />
         <Collapse
@@ -270,7 +270,7 @@ const OverView = () => {
               We are seeking a skilled music composer to create original compositions for [Project Name].
               The project is a [brief description of the project, such as a short film,
               video game, advertisement, or podcast]. We require unique and captivating music
-              that enhances the overall experience and complements the project's theme and mood.</p>
+              that enhances the overall experience and complements the project&apos;s theme and mood.</p>
           }]}
         />
         <Collapse
@@ -279,7 +279,7 @@ const OverView = () => {
               We are seeking a skilled music composer to create original compositions for [Project Name].
               The project is a [brief description of the project, such as a short film,
               video game, advertisement, or podcast]. We require unique and captivating music
-              that enhances the overall experience and complements the project's theme and mood.</p>
+              that enhances the overall experience and complements the project&apos;s theme and mood.</p>
           }]}
         />
         <Collapse
@@ -288,7 +288,7 @@ const OverView = () => {
               We are seeking a skilled music composer to create original compositions for [Project Name].
               The project is a [brief description of the project, such as a short film,
               video game, advertisement, or podcast]. We require unique and captivating music
-              that enhances the overall experience and complements the project's theme and mood.</p>
+              that enhances the overall experience and complements the project&apos;s theme and mood.</p>
           }]}
         />
         <Collapse
@@ -297,7 +297,7 @@ const OverView = () => {
               We are seeking a skilled music composer to create original compositions for [Project Name].
               The project is a [brief description of the project, such as a short film,
               video game, advertisement, or podcast]. We require unique and captivating music
-              that enhances the overall experience and complements the project's theme and mood.</p>
+              that enhances the overall experience and complements the project&apos;s theme and mood.</p>
           }]}
         />
         <Collapse
@@ -306,7 +306,7 @@ const OverView = () => {
               We are seeking a skilled music composer to create original compositions for [Project Name].
               The project is a [brief description of the project, such as a short film,
               video game, advertisement, or podcast]. We require unique and captivating music
-              that enhances the overall experience and complements the project's theme and mood.</p>
+              that enhances the overall experience and complements the project&apos;s theme and mood.</p>
           }]}
         />
         <Collapse
@@ -315,7 +315,7 @@ const OverView = () => {
               We are seeking a skilled music composer to create original compositions for [Project Name].
               The project is a [brief description of the project, such as a short film,
               video game, advertisement, or podcast]. We require unique and captivating music
-              that enhances the overall experience and complements the project's theme and mood.</p>
+              that enhances the overall experience and complements the project&apos;s theme and mood.</p>
           }]}
         />
       </div>

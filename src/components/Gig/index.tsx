@@ -143,9 +143,9 @@ const Gig = () => {
             <div className={style.gigsContainer}>
                 <h1 className={style.title}>My Gigs</h1>
                 <Row gutter={20}>
-                    {[1, 2, 3, 4, 4, 4]?.map(() => {
+                    {[1, 2, 3, 4, 4, 4]?.map((idx) => {
                         return (
-                            <Col span={24} xl={8} lg={12} md={24}>
+                            <Col key={idx} span={24} xl={8} lg={12} md={24}>
                                 <div style={{ marginTop: "40px" }}>
                                     <Image src={GigImage} alt='GigImage' className='img-fluid' />
                                     <h1 className={style.gigDes}>Web design/Landing page. Fitter life from Vitalix Fitness</h1>
@@ -181,8 +181,8 @@ const Gig = () => {
                             </div>
                         </div>
                         <p className={style.reviewDescription}>
-                            Certainly! Guns N' Roses is a legendary rock band known for their energetic performances and iconic songs.
-                            However, as an AI text-based model, I don't have the ability to listen to the music directly.
+                            Certainly! Guns N&apos; Roses is a legendary rock band known for their energetic performances and iconic songs.
+                            However, as an AI text-based model, I don&apos;t have the ability to listen to the music directly.
                         </p>
                     </div>
                 </div>
@@ -196,8 +196,8 @@ const Gig = () => {
                     </div>
                     <div className={style.reviewRating}>
                         <p className={style.reviewDescription}>
-                            Thanks a lot for your honest Feedback! It’s been always pleasure to working with you.
-                            It was a great experience. If you have more project don’t forget to contact me. Have a great day.
+                            Thanks a lot for your honest Feedback! It&apos;s been always pleasure to working with you.
+                            It was a great experience. If you have more project don&apos;t forget to contact me. Have a great day.
                         </p>
                     </div>
                 </div>
@@ -222,8 +222,8 @@ const Gig = () => {
                             </div>
                         </div>
                         <p className={style.reviewDescription}>
-                            Certainly! Guns N' Roses is a legendary rock band known for their energetic performances and iconic songs.
-                            However, as an AI text-based model, I don't have the ability to listen to the music directly.
+                            Certainly! Guns N&apos; Roses is a legendary rock band known for their energetic performances and iconic songs.
+                            However, as an AI text-based model, I don&apos;t have the ability to listen to the music directly.
                         </p>
                     </div>
                 </div>
@@ -248,8 +248,8 @@ const Gig = () => {
                             </div>
                         </div>
                         <p className={style.reviewDescription}>
-                            Certainly! Guns N' Roses is a legendary rock band known for their energetic performances and iconic songs.
-                            However, as an AI text-based model, I don't have the ability to listen to the music directly.
+                            Certainly! Guns N&apos; Roses is a legendary rock band known for their energetic performances and iconic songs.
+                            However, as an AI text-based model, I don&apos;t have the ability to listen to the music directly.
                         </p>
                     </div>
                 </div>
