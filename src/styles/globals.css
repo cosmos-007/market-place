@@ -64,7 +64,7 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
   font-family: "Roboto";
 }
 
@@ -73,11 +73,15 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: "Roboto";
+  margin: 0 !important;
+
 }
 
 body {
   color: rgb(var(--foreground-rgb));
   background: transparent;
+  margin: 0 !important;
+
 }
 
 a {
