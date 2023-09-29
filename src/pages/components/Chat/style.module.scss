@@ -137,8 +137,76 @@
         }
     }
 
+    .chatStyleContainer {
+        margin-bottom: 54px;
+        display: flex;
+
+        .chatInnerContainer {
+            width: max-content;
+
+            .chatStyle {
+                width: max-content;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .chatBox {
+                    padding: 16px;
+                    border-radius: 0px 10px 10px 10px;
+                    background: #2C2D32;
+                    max-width: 300px;
+                    width: 100%;
+
+                    .chatName {
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        color: #FFFFFF;
+                        margin-bottom: 10px;
+                    }
+
+                    .chatMessage {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 159.687%;
+                        margin-bottom: 0px;
+                        color: #5C5C68;
+                    }
+
+                    &.sendBox {
+                        border-radius: 10px 10px 0px 10px;
+                        background: #D1D1F0;
+
+                        .chatName {
+                            color: #0A0A0A;
+                        }
+
+                        .chatMessage {
+                            color: #2C2D32;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+        .timeStyle {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0px;
+            margin-top: 16px;
+            color: #5C5C68;
+            text-align: right;
+        }
+    }
+
     .chatContainer {
-        padding: 53px 33px;
+        padding: 60px 33px;
         border-radius: 10px;
         background: linear-gradient(90deg, #1B1B1D 0%, #232427 100%);
         margin-top: 16px;
@@ -167,7 +235,7 @@
     }
 
     .AllConversationContainer {
-        padding: 30px;
+        padding: 23px 30px;
         border-radius: 10px;
         background: #464957;
 
