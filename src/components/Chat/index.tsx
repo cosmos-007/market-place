@@ -88,6 +88,50 @@ const Chat = () => {
             time: "3m",
             icon: Avatar9
         },
+        {
+            name: "moulud1997",
+            des: "I will create ac...",
+            time: "3m",
+            icon: Avatar7
+        },
+    ]
+
+    const ChatData = [
+        {
+            name: "muhammad_jabed_",
+            message: "So you have more chances to get sell",
+            icon: Avatar,
+            type: "receive",
+            time: "Sep 08, 4.40pm"
+        },
+        {
+            name: "Me",
+            message: "So you have more chances to get sell",
+            icon: "",
+            type: "send",
+            time: ""
+        },
+        {
+            name: "muhammad_jabed_",
+            message: "So you have more chances to get sell",
+            icon: Avatar,
+            type: "receive",
+            time: "Sep 08, 4.40pm"
+        },
+        {
+            name: "Me",
+            message: "So you have more chances to get sell",
+            icon: "",
+            type: "send",
+            time: ""
+        },
+        {
+            name: "muhammad_jabed_",
+            message: "So you have more chances to get sell",
+            icon: Avatar,
+            type: "receive",
+            time: "Sep 08, 4.40pm"
+        },
     ]
 
     return (
@@ -129,6 +173,29 @@ const Chat = () => {
                         </div>
                     </div>
                     <div className={style.chatContainer}>
+                        {ChatData?.map((item, index) => {
+                            const isSend = item?.type == "send" ? true : false
+                            return (
+                                <div
+                                    className={style.chatStyleContainer}
+                                    key={index}
+                                    style={{ justifyContent: isSend ? "flex-end" : "flex-start" }}
+                                >
+                                    <div className={style.chatInnerContainer}>
+                                        <div className={style.chatStyle}>
+                                            {item?.icon &&
+                                                <Image src={item?.icon} alt='avatar' height={54} width={54} />
+                                            }
+                                            <div className={`${style.chatBox} ${isSend && style.sendBox}`}>
+                                                <h1 className={style.chatName}>{item?.name || "---"}</h1>
+                                                <p className={style.chatMessage}>{item?.message || "--"}</p>
+                                            </div>
+                                        </div>
+                                        {item?.time && <p className={style.timeStyle}>{item?.time}</p>}
+                                    </div>
+                                </div>
+                            )
+                        })}
                         <div className={style.chatInputContainer}>
                             <Image src={Smily} alt='smily' />
                             <h1 className={style.slash}>|</h1>
