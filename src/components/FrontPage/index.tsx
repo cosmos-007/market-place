@@ -8,9 +8,11 @@ import countryFlag from '../../assets/images/flag.png'
 import Profile from '../../assets/images/profileimg.png'
 import thumbnill from '../../assets/images/thumbnill.png'
 import Like from '../../assets/images/like.png'
+import { useRouter } from 'next/router'
 
 
 const HomePage = () => {
+  const router = useRouter();
 
   return (
     <>
@@ -113,7 +115,7 @@ const HomePage = () => {
           </Col>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item,idx) => (
             <Col key={idx} span={24} xl={6} lg={8} md={12} className='mb-3'>
-              <div  className={`${style.serviceCard} d-flex flex-column`}>
+              <div onClick={()=>{router.push('/gig-overview')}} className={`${style.serviceCard} d-flex flex-column`}>
                 <div className={style.thumbnilicon}>
                   <Image
                     src={thumbnill}

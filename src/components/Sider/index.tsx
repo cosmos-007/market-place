@@ -10,8 +10,44 @@ import settingIcon from '../../assets/images/setting.png'
 import supportIcon from '../../assets/images/support.png'
 import personIcon from '../../assets/images/profileimg.png'
 import { Row, Col } from 'antd';
+import { useRouter } from 'next/router'
+
 
 const SideBar = () => {
+    const router =useRouter();
+    const location = typeof window !== 'undefined' ? window.location.pathname :  '/home';
+    const menuItems = [
+        {
+          title: 'Home',
+          icon: homeIcon,
+          path:'/'
+        },
+        {
+          title: 'Orders',
+          icon: categoryIcon,
+          path:'/orders'
+        },
+        {
+          title: 'Profile',
+          icon: profileIcon,
+          path:'/gig'
+        },
+        {
+          title: 'Wallet',
+          icon: checkoutIcon,
+          path:'/wallet'
+        },
+        {
+          title: 'Boost',
+          icon: settingIcon,
+          path:'/boost-gig'
+        },
+        {
+          title: 'Community',
+          icon: supportIcon,
+          path:'/community'
+        },
+      ];
     return (
         <>
             <div className={style.sidebar}>
@@ -23,82 +59,23 @@ const SideBar = () => {
                     />
                 </div>
                 <Row className='mt-4' gutter={20}>
-                    <Col span={12} className='mb-2'>
-                        <div className={`card ${style.cards} ${style.active}`}>
-                            <div className={style.imageblock}>
-                                <Image
-                                    src={homeIcon}
-                                    alt="Home"
-                                    className='img-fluid'
-                                />
-                            </div>
-
-                            <h3>Home</h3>
-                        </div>
-                    </Col>
-                    <Col span={12} className='mb-2'>
-                        <div className={`card ${style.cards}`}>
-                            <div className={style.imageblock}>
-                                <Image
-                                    src={categoryIcon}
-                                    alt="categoryIcon"
-                                    className='img-fluid'
-                                />
-                            </div>
-
-                            <h3>Category</h3>
-                        </div>
-                    </Col>
-                    <Col span={12} className='mb-2'>
-                        <div className={`card ${style.cards}`}>
-
-                            <div className={style.imageblock}>
-                                <Image
-                                    src={profileIcon}
-                                    alt="profileIcon"
-                                    className='img-fluid'
-                                />
-                            </div>
-                            <h3>Profile</h3>
-                        </div>
-                    </Col>
-                    <Col span={12} className='mb-2'>
-                        <div className={`card ${style.cards}`}>
-                            <div className={style.imageblock}>
-                                <Image
-                                    src={checkoutIcon}
-                                    alt="checkoutIcon"
-                                    className='img-fluid'
-                                />
-                            </div>
-                            <h3>Checkout</h3>
-                        </div>
-                    </Col>
-                    <Col span={12} className='mb-2'>
-                        <div className={`card ${style.cards}`}>
-                            <div className={style.imageblock}>
-                                <Image
-                                    src={settingIcon}
-                                    alt="settingIcon"
-                                    className='img-fluid'
-                                />
-                            </div>
-                            <h3>Settings</h3>
-                        </div>
-                    </Col>
-                    <Col span={12} className='mb-2'>
-                        <div className={`card ${style.cards}`}>
-                            <div className={style.imageblock}>
-                                <Image
-                                    src={supportIcon}
-                                    alt="supportIcon"
-                                    className='img-fluid'
-                                />
-                            </div>
-                            <h3>Support</h3>
-                        </div>
-                    </Col>
-                    <Col span={24} className='mb-2'>
+                {menuItems.map((menuItem, idx) => (
+        <Col key={idx} span={12} className='mb-2'  >
+          <div
+          onClick={()=>{router.push(menuItem?.path)}}
+            className={`card ${style.cards} ${location == menuItem?.path?.toLowerCase()  ? style.active : ''}`}
+          >
+            <div className={style.imageblock}>
+              <Image
+                src={menuItem.icon}
+                alt={menuItem.title}
+                className='img-fluid'
+              />
+            </div>
+            <h3>{menuItem.title}</h3>
+          </div>
+        </Col>
+      ))}                    <Col span={24} className='mb-2'>
                         <h2>Active People</h2>
                     </Col>
                     <Col span={24} className='mb-2'>
