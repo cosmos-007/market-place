@@ -31,7 +31,7 @@ export default function Home() {
               <HeaderSection />
             </Header>
             <Content>
-              {/* <HomePage /> */}
+              <HomePage />
               {/* <GigPost /> */}
               {/* <Budget /> */}
               {/* <Transactions /> */}
@@ -40,7 +40,7 @@ export default function Home() {
               {/* <Gig /> */}
               {/* <OverView /> */}
               {/* <Checkout /> */}
-              <Chat />
+              {/* <Chat /> */}
             </Content>
             <Footer> <FooterSection /> </Footer>
           </Layout>
