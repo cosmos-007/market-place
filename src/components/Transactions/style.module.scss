@@ -3,13 +3,13 @@
 
     .balanceContainer {
         padding: 40px;
-        background-color: #1B1B1D;
+        background-color: #1b1b1d;
         border-radius: 10px;
 
         .balanceStyle {
             padding: 46px;
             border-radius: 10px;
-            background-image: url('../../assets/images/balancebg.jpeg');
+            background-image: url("../../assets/images/balancebg.png");
             background-color: black;
             background-position: center;
             background-repeat: no-repeat;
@@ -22,12 +22,12 @@
                 font-weight: 400;
                 line-height: 142.188%;
                 text-align: center;
-                color: #D1D1F0;
+                color: #d1d1f0;
                 margin-bottom: 40px;
             }
 
             .totalAmount {
-                color: #FFFFFF;
+                color: #ffffff;
                 font-size: 48px;
                 font-style: normal;
                 font-weight: 600;
@@ -47,13 +47,12 @@
                     font-weight: 400;
                     line-height: 152%;
                     margin-bottom: 0px;
-                    color: #D1D1F0;
+                    color: #d1d1f0;
                 }
             }
         }
 
         .IconsContainer {
-
             .iconCard {
                 padding: 21px;
                 min-width: 140px;
@@ -69,7 +68,7 @@
                     line-height: 159.687%;
                     margin: 0px;
                     text-align: center;
-                    color: #D1D1F0;
+                    color: #d1d1f0;
                     padding-top: 16px;
                 }
             }
@@ -86,7 +85,7 @@
                 font-size: 32px;
                 font-style: normal;
                 font-weight: 600;
-                color: #FFFFFF;
+                color: #ffffff;
                 text-align: right;
                 line-height: normal;
                 margin-bottom: 16px;
@@ -99,7 +98,7 @@
                 line-height: 159.687%;
                 text-align: right;
                 margin: 0px;
-                color: #D1D1F0;
+                color: #d1d1f0;
             }
         }
 
@@ -119,7 +118,7 @@
                 line-height: 152%;
                 text-align: right;
                 margin-bottom: 10px;
-                color: #D1D1F0;
+                color: #d1d1f0;
             }
 
             .bankNumer {
@@ -128,7 +127,7 @@
                 justify-content: space-between;
                 padding: 19px 28px;
                 border-radius: 10px;
-                background-color: #0A0A0A;
+                background-color: #0a0a0a;
                 border: 1px solid #464957;
 
                 .numberStyle {
@@ -137,7 +136,7 @@
                     font-weight: 400;
                     line-height: 152%;
                     text-align: right;
-                    color: #FFFFFF;
+                    color: #ffffff;
                     margin: 0px;
                 }
             }
@@ -146,14 +145,13 @@
 
     .withdrawContainer {
         padding: 40px;
-        background-color: #1B1B1D;
+        background-color: #1b1b1d;
         border-radius: 10px;
 
         .tabContainter {
             margin-bottom: 40px;
 
             :global(.ant-tabs) {
-
                 :global(.ant-tabs-nav) {
                     &::before {
                         border-bottom: 0px;
@@ -172,19 +170,18 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: normal;
-                        color: #FFFFFF;
+                        color: #ffffff;
 
                         &:global(.ant-tabs-tab-active) {
-                            background-color: #7510F5;
+                            background-color: #7510f5;
 
                             :global(.ant-tabs-tab-btn) {
-                                color: #FFFFFF;
+                                color: #ffffff;
                             }
                         }
 
                         &:nth-child(1) {
                             border-radius: 10px 0px 0px 10px;
-
                         }
 
                         &:nth-child(3) {
@@ -200,7 +197,6 @@
         }
 
         .formBlock {
-
             :global(.ant-form-item) {
                 text-align: right;
 
@@ -210,20 +206,20 @@
                         text-align: right;
                         border: 0.5px solid transparent;
                         border-radius: 10px;
-                        background-image: linear-gradient(#0A0A0A, #0A0A0A),
+                        background-image: linear-gradient(#0a0a0a, #0a0a0a),
                             linear-gradient(90deg, rgba(219, 0, 255, 0.36), rgba(92, 107, 248, 0.36));
                         background-origin: border-box;
                         background-clip: padding-box, border-box;
                         background-color: transparent;
                         line-height: 31.94px;
-                        color: #FFFFFF;
+                        color: #ffffff;
                         font-size: 20px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 159.687%;
 
                         &::placeholder {
-                            color: #FFFFFF;
+                            color: #ffffff;
                             text-align: right;
                             font-size: 20px;
                             font-style: normal;
@@ -238,7 +234,7 @@
                 }
 
                 label {
-                    color: #FFFFFF;
+                    color: #ffffff;
                     font-size: 20px;
                     font-style: normal;
                     font-weight: 400;
@@ -258,7 +254,7 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 159.687%;
-                    color: #D1D1F0;
+                    color: #d1d1f0;
                     margin: 0px;
                     margin-top: 8px;
                 }
@@ -286,14 +282,14 @@
                     font-weight: 400;
                     line-height: 152%;
                     margin: 0px;
-                    color: #D1D1F0;
+                    color: #d1d1f0;
 
                     span {
                         font-size: 24px;
                         font-style: normal;
                         font-weight: 500;
                         line-height: 131.687%;
-                        color: #FFFFFF;
+                        color: #ffffff;
                     }
                 }
             }
@@ -308,8 +304,8 @@
                     font-weight: 400;
                     line-height: 152%;
                     margin: 0px;
-                    color: #FFFFFF;
-                    background-color: #1B1B1D;
+                    color: #ffffff;
+                    background-color: #1b1b1d;
                     width: max-content;
                     position: relative;
                     padding: 0px 10px;
@@ -352,7 +348,6 @@
             }
         }
     }
-
 
     .transactionsHistoryContainer {
         margin-top: 100px;
