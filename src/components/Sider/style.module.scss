@@ -15,8 +15,17 @@
         align-items: center;
         position: relative;
         border-radius: 12px;
-        &.active {
-            background: linear-gradient(180deg, rgba(46, 63, 218, 0.36) 0%, rgba(205, 20, 235, 0.36) 100%);
+        &.active,
+        &:hover {
+            // border-image-source: linear-gradient(90deg, #5c6bf8 2%, #db00ff 100%);
+            // background: linear-gradient(180deg, rgba(46, 63, 218, 0.36) 0%, rgba(205, 20, 235, 0.36) 100%);
+
+            background-image: linear-gradient(90deg, rgba(92, 107, 248, 0.2), rgba(219, 0, 255, 1)),
+                linear-gradient(rgba(46, 63, 218, 0.36) 0%, rgba(205, 20, 235, 0.36) 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            background-color: transparent;
+
             &:before {
                 display: none;
             }
