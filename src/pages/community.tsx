@@ -14,9 +14,9 @@ export default function CommunityPage() {
         <div className={style.home}>
           <Layout>
             <Layout>
-              <Header>
+              {/* <Header>
                 <HeaderSection />
-              </Header>
+              </Header> */}
               <Content>
 <Community/>              </Content>
               <Footer> <FooterSection /> </Footer>

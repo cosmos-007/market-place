@@ -21,7 +21,7 @@ const Community = () => {
         <Image src={CommunityPic} alt='communityPic' className='img-fluid' />
       </div>
       <div className={style.communityMenu}>
-        <Button className={style.emmptyBtn}></Button>
+        <Button className={style.emmptyBtn}> Post</Button>
         <h1>Gig Request</h1>
         <h1>General Topics</h1>
         <h1>Admin Notifications</h1>

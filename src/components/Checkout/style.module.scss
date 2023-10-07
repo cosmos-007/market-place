@@ -156,6 +156,9 @@
                 border: 1px solid #2C2D32;
                 padding: 12px 20px;
                 border-radius: 6px;
+                display: flex;
+                align-items: center;
+                gap:10px;
 
                 .title {
                     font-size: 16px;

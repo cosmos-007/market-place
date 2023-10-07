@@ -13,9 +13,10 @@ import Avatar1 from '../../assets/images/avatar4.png'
 import Avatar2 from '../../assets/images/avatar1.png'
 import { Button, Col, Input, Pagination, Rate, Row } from 'antd'
 import { MailOutlined } from '@ant-design/icons'
+import { useRouter } from 'next/router'
 
 const Gig = () => {
-
+const router = useRouter();
     const { TextArea } = Input;
 
     return (
@@ -145,7 +146,7 @@ const Gig = () => {
                 <Row gutter={20}>
                     {[1, 2, 3, 4, 4, 4]?.map((idx) => {
                         return (
-                            <Col key={idx} span={24} xl={8} lg={12} md={24}>
+                            <Col key={idx} span={24} xl={8} lg={12} md={24} onClick={()=>{router.push('/gig-overview')}}>
                                 <div style={{ marginTop: "40px" }}>
                                     <Image src={GigImage} alt='GigImage' className='img-fluid' />
                                     <h1 className={style.gigDes}>Web design/Landing page. Fitter life from Vitalix Fitness</h1>

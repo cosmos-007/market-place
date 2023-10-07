@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './style.module.scss'
 import { Step, Stepper } from 'react-form-stepper'
 import { Button, Col, Form, Input, Row } from 'antd'
@@ -10,6 +10,18 @@ import Image from 'next/image'
 import { DeleteOutlined, EditOutlined } from '@ant-design/icons'
 
 const Checkout = () => {
+    const [activeOption, setActiveOption] = useState('accountFunds'); // Set the default active option
+
+    const handleOptionChange = (option:string) => {
+      setActiveOption(option);
+    };
+  
+    const paymentOptions = [
+      { id: 'accountFunds', label: 'Pay with account funds', icon:AtmIcon },
+      { id: 'debitCreditCard', label: 'Debit Card / Credit Card', icon: AtmIcon1 },
+      { id: 'payWithPayPal', label: 'Pay with PayPal', icon: AtmIcon2 },
+      // Add more payment options as needed
+    ];
     return (
         <div className={style.checkoutMainContainer}>
             <Stepper activeStep={1} dir='rtl'>
@@ -45,22 +57,22 @@ const Checkout = () => {
                         <div className={style.paymentContainer}>
                             <h1 className={style.title}>Payment Method</h1>
                             <div className='d-flex justify-content-between'>
-                                <div className={style.paymentStyle}>
-                                    <h1 className={style.title}>Pay with account funds
-                                        <Image src={AtmIcon} alt='atm' />
-                                    </h1>
-                                </div>
-                                <div className={style.paymentStyle}>
-                                    <h1 className={style.title}>Debit Card / Credit Card
-                                        <Image src={AtmIcon1} alt='atm' />
-                                    </h1>
-                                </div>
-                                <div className={style.paymentStyle}>
-                                    <h1 className={style.title}>Pay with PayPal
-                                        <Image src={AtmIcon2} alt='atm' />
-                                    </h1>
-                                </div>
-                            </div>
+                            {paymentOptions.map((option) => (
+        <label key={option.id} className={`${style.paymentStyle}`}>
+          <input
+            type="radio"
+            name="paymentOption"
+            value={option.id}
+            checked={activeOption === option.id}
+            onChange={() => handleOptionChange(option?.id)}
+          />
+          <div className={`${style.title}`}>
+            {option.label}
+            <Image src={option.icon} alt='atm'  />
+          </div>
+        </label>
+      ))}
+    </div>
                         </div>
                         <div className={style.formBlock}>
                             <Form
@@ -73,7 +85,7 @@ const Checkout = () => {
                                     <Col span={24} xl={24} lg={24} md={12} className='mb-4'>
                                         <Form.Item
                                             label="Card Number"
-                                            name="number"
+                                            name="cardNumber"
                                             rules={[{ required: true, message: 'Required Field!' }]}
                                         >
                                             <Input placeholder='1234  5678  954  65' />
@@ -82,7 +94,7 @@ const Checkout = () => {
                                     <Col span={24} xl={12} lg={24} md={12} className='mb-4'>
                                         <Form.Item
                                             label="CVV"
-                                            name="number"
+                                            name="cvv"
                                             rules={[{ required: true, message: 'Required Field!' }]}
                                         >
                                             <Input placeholder='*********' />
@@ -91,7 +103,7 @@ const Checkout = () => {
                                     <Col span={24} xl={12} lg={24} md={12} className='mb-4'>
                                         <Form.Item
                                             label="Expiry Date"
-                                            name="number"
+                                            name="expiryDate"
                                             rules={[{ required: true, message: 'Required Field!' }]}
                                         >
                                             <Input placeholder='10/2023' />
@@ -100,7 +112,7 @@ const Checkout = () => {
                                     <Col span={24} xl={24} lg={24} md={12} className='mb-4'>
                                         <Form.Item
                                             label="Card Holder Name"
-                                            name="number"
+                                            name="cardHolderName"
                                             rules={[{ required: true, message: 'Required Field!' }]}
                                         >
                                             <Input placeholder='Johson Watson' />

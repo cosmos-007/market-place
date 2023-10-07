@@ -15,14 +15,14 @@ export default function CheckoutPage() {
         <div className={style.home}>
           <Layout>
             <Layout>
-              <Header>
+              {/* <Header>
                 <HeaderSection />
-              </Header>
+              </Header> */}
               <Content>
 <Checkout/>              </Content>
-              <Footer> <FooterSection /> </Footer>
+              {/* <Footer> <FooterSection /> </Footer> */}
             </Layout>
-            <Sider className={style.CustomSider} ><SideBar /></Sider>
+            {/* <Sider className={style.CustomSider} ><SideBar /></Sider> */}
           </Layout>
         </div >
       </>)

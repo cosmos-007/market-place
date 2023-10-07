@@ -27,8 +27,8 @@ const HomePage = () => {
             </div>
           </Col>
           <Col span={24} xl={16} lg={18} className={`mb-3 ${style.topcarousel}`}>
-            <Carousel dots={true}>
-              {[1, 2, 3].map((item,idx) => (
+            <Carousel  dots={true}>
+              {[1, 2, 3,4].map((item,idx) => (
                 <div key={idx} className={style.data}>
                   <Row>
                     <Col span={24} md={8}>
