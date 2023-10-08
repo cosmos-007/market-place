@@ -1,28 +1,41 @@
 import style from '../styles/style.module.scss'
-import { Layout } from "antd";
+import { Layout, Spin } from "antd";
 import HeaderSection from "@/components/Header";
 import FooterSection from "@/components/Footer";
 import SideBar from "@/components/Sider";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Budget from '@/components/Budget';
+import { useEffect, useState } from 'react';
 import Orders from '@/components/Orders';
 
-export default function CheckoutPage() {
-    const { Header, Footer, Sider, Content } = Layout;
+export default function BoostGigPage() {
+  const { Header, Footer, Sider, Content } = Layout;
+  const [isLoading, setIsLoading] = useState(true);
 
-    return (
-        <>
-        <div className={style.home}>
+useEffect(()=>{
+
+  setTimeout(()=>{
+setIsLoading(false)
+  },1000)
+},[])
+
+  return (
+      <>
+      <div className={style.home}>
+    {isLoading ?     <Spin size="large" tip="Loading...">
+        <div style={{ minHeight: '100vh' }}></div>
+      </Spin>:<Layout id="home">
           <Layout>
-            <Layout>
-              <Header>
-                <HeaderSection />
-              </Header>
-              <Content>
-<Orders/>              </Content>
-              <Footer> <FooterSection /> </Footer>
-            </Layout>
-            <Sider className={style.CustomSider} ><SideBar /></Sider>
+            <Header>
+              <HeaderSection />
+            </Header>
+            <Content>
+              <Orders />
+            </Content>
+            <Footer> <FooterSection /> </Footer>
           </Layout>
-        </div >
-      </>)
+          <Sider className={style.CustomSider} ><SideBar /></Sider>
+        </Layout>}
+      </div >
+    </>)
   }
