@@ -10,21 +10,12 @@ import Orders from '@/components/Orders';
 
 export default function BoostGigPage() {
   const { Header, Footer, Sider, Content } = Layout;
-  const [isLoading, setIsLoading] = useState(true);
 
-useEffect(()=>{
-
-  setTimeout(()=>{
-setIsLoading(false)
-  },1000)
-},[])
 
   return (
       <>
       <div className={style.home}>
-    {isLoading ?     <Spin size="large" tip="Loading...">
-        <div style={{ minHeight: '100vh' }}></div>
-      </Spin>:<Layout id="home">
+  <Layout id="home">
           <Layout>
             <Header>
               <HeaderSection />
@@ -35,7 +26,7 @@ setIsLoading(false)
             <Footer> <FooterSection /> </Footer>
           </Layout>
           <Sider className={style.CustomSider} ><SideBar /></Sider>
-        </Layout>}
+        </Layout>
       </div >
     </>)
   }
