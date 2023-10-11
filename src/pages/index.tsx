@@ -15,8 +15,8 @@ export default function LandingPage() {
     return (
         <>
         <div className={style.home}>
-      <Layout style={{minWidth:'100vw',maxHeight:'100vh'}} >
-            <Layout style={{maxHeight:'100vh'}}>
+      <Layout  >
+            <Layout >
               <Header>
                 <HeaderSection />
               </Header>
